@@ -13,7 +13,7 @@ export default class Test extends React.Component {
     }
   }
   showModal = () => {
-    this.setState({ visible: true });
+    this.setState({ visible: true, formData: { test: "多余的", Name: "正常值" } });
   }
   EditFormCancl = () => {
     this.setState({ visible: false });
